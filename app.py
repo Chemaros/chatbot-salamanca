@@ -13,6 +13,7 @@ def chat():
         return jsonify({
             "response": "La farmacia de guardia hoy en Salamanca es Farmacia Central (Calle Toro, 22). Abierta 24h."
         })
+    
     elif "eventos" in user_input or "agenda" in user_input:
         return jsonify({
             "response": (
@@ -24,6 +25,55 @@ def chat():
                 "Pronto te podré decir directamente qué hay hoy 😉"
             )
         })
+    
+    elif "empadronamiento" in user_input or "empadronar" in user_input:
+        return jsonify({
+            "response": (
+               "Para empadronarte en Salamanca, acude a la Oficina de Atención Ciudadana en la Calle Íscar Peyra 24. "
+               "Puedes pedir cita o más info en: https://www.aytosalamanca.es/es/tramitesgestiones/empadronamiento/"
+            )
+        })
+    
+    elif "autobús" in user_input or "bus" in user_input or "transporte" in user_input:
+        return jsonify({
+            "response": (
+                "Puedes consultar los horarios y líneas de autobuses urbanos de Salamanca en: https://www.tussalamanca.es/"
+            )
+        })
+    
+    elif "hospital" in user_input or "urgencia" in user_input or "salud" in user_input:
+        return jsonify({
+            "response": (
+                "El Hospital Universitario de Salamanca está en Paseo de San Vicente, 182. "
+                "Para consultas o citas, visita: https://www.saludcastillayleon.es/"
+            )
+        })
+    
+    elif "votar" in user_input or "elecciones" in user_input:
+        return jsonify({
+            "response": (
+                "Puedes consultar tu colegio electoral en la web del INE: https://sede.ine.gob.es/. "
+                "O contacta con tu ayuntamiento para más detalles."
+            )
+        })
+    elif "ayuntamiento" in user_input or "contactar" in user_input:
+        return jsonify({
+            "response": (
+                "Puedes contactar con el Ayuntamiento de Salamanca en el 923 279 100 o en: https://www.aytosalamanca.es/"
+            )
+        })
+    
+    elif "ayuntamiento" in user_input or "contactar" in user_input:
+        return jsonify({
+            "response": (
+                "Puedes contactar con el Ayuntamiento de Salamanca en el 923 279 100 o en: https://www.aytosalamanca.es/"
+            )
+        })
+
+    
+
+
+
 
 
 
