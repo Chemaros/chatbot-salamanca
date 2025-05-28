@@ -13,9 +13,18 @@ def chat():
         return jsonify({
             "response": "La farmacia de guardia hoy en Salamanca es Farmacia Central (Calle Toro, 22). Abierta 24h."
         })
-    
-    elif 'eventos' in user_input or 'agenda' in user_input:
-        return jsonify({"response": "Puedes consultar los eventos culturales en Salamanca en: https://salamancavivela.es/agenda/ y https://www.salamancalia.es/"})
+    elif "eventos" in user_input or "agenda" in user_input:
+        return jsonify({
+            "response": (
+                "Aquí tienes algunas fuentes donde puedes consultar los eventos culturales "
+                "en la provincia de Salamanca:\n\n"
+                "🎭 Salamanca Vivela: https://salamancavivela.es/agenda/\n"
+                "🎶 Salamancalia: https://www.salamancalia.es/\n"
+                "📣 Facebook (alternativos): https://www.facebook.com/groups/392811704077155/\n\n"
+                "Pronto te podré decir directamente qué hay hoy 😉"
+            )
+        })
+
 
 
     return jsonify({
