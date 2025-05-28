@@ -15,7 +15,7 @@ def chat():
         })
     
     elif 'eventos' in user_input or 'agenda' in user_input:
-        return jsonify({"response": "Consulta todos los eventos culturales de la provincia de Salamanca en la Agenda de la Diputación: https://www.lasalina.es/agenda.html?area=Cultura"})
+        return jsonify({"response": "Puedes consultar los eventos culturales en Salamanca en: https://salamancavivela.es/agenda/ y https://www.salamancalia.es/"})
 
 
     return jsonify({
